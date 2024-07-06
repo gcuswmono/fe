@@ -33,7 +33,7 @@ export default function LoginPage() {
         body: JSON.stringify({ email, password }),
       })
       if (response.ok) {
-        router.push('/dashboard')
+        router.push('/fe/dashboard')
       } else {
         alert('Login failed')
       }

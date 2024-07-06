@@ -34,7 +34,7 @@ export default function SignupPage() {
         body: JSON.stringify({ name, email, password }),
       })
       if (response.ok) {
-        router.push('/login')
+        router.push('/fe/login')
       } else {
         alert('Signup failed')
       }
