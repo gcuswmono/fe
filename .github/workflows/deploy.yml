@@ -44,4 +44,4 @@ jobs:
           git commit -m 'Deploy to GitHub Pages'
 
           # Push to the gh-pages branch
-          git push --force --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages:gh-pages
+          git push --force "https://${{GITHUB_ACTOR}}:${{GITHUB_TOKEN}}@github.com/${{GITHUB_REPOSITORY}}.git" gh-pages:gh-pages
