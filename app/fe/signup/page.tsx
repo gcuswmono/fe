@@ -34,7 +34,7 @@ export default function SignupPage() {
         body: JSON.stringify({ name, email, password }),
       })
       if (response.ok) {
-        router.push('/fe/login')
+        router.push('/fe/fe/login')
       } else {
         alert('Signup failed')
       }
@@ -128,7 +128,7 @@ export default function SignupPage() {
             </div>
 
             <div className="mt-6">
-              <Link href="/login" className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600" style={{ fontSize: `${getFontSize(0.875)}rem` }}>
+              <Link href="/fe/login" className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm bg-white dark:bg-gray-700 font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600" style={{ fontSize: `${getFontSize(0.875)}rem` }}>
                 Sign in
               </Link>
             </div>

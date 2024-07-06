@@ -77,21 +77,21 @@ export default function Navigation() {
                     <nav>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/" className="flex items-center py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" style={{ fontSize: `${getFontSize(1)}rem` }}>
+                                <Link href="/fe" className="flex items-center py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" style={{ fontSize: `${getFontSize(1)}rem` }}>
                                     <span className="flex-grow">Home</span>
-                                    {path === "/" && <span className="ml-2">🔥</span>}
+                                    {path === "/fe" && <span className="ml-2">🔥</span>}
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/login" className="flex items-center py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" style={{ fontSize: `${getFontSize(1)}rem` }}>
+                                <Link href="/fe/login" className="flex items-center py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" style={{ fontSize: `${getFontSize(1)}rem` }}>
                                     <span className="flex-grow">Login</span>
-                                    {path === "/login" && <span className="ml-2">🔥</span>}
+                                    {path === "/fe/login" && <span className="ml-2">🔥</span>}
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/signup" className="flex items-center py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" style={{ fontSize: `${getFontSize(1)}rem` }}>
+                                <Link href="/fe/signup" className="flex items-center py-2 px-4 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded" style={{ fontSize: `${getFontSize(1)}rem` }}>
                                     <span className="flex-grow">Sign Up</span>
-                                    {path === "/signup" && <span className="ml-2">🔥</span>}
+                                    {path === "/fe/signup" && <span className="ml-2">🔥</span>}
                                 </Link>
                             </li>
                         </ul>
